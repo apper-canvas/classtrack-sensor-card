@@ -3,6 +3,7 @@ import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
 import Badge from "@/components/atoms/Badge";
 import Card from "@/components/atoms/Card";
+import Input from "@/components/atoms/Input";
 import Avatar from "@/components/atoms/Avatar";
 import Grades from "@/components/pages/Grades";
 import Attendance from "@/components/pages/Attendance";
@@ -10,13 +11,14 @@ import Attendance from "@/components/pages/Attendance";
 const StudentModal = ({ student, isOpen, onClose, onSave, onEdit, isEditing: isEditingProp, grades = [], attendance = [] }) => {
   const [activeTab, setActiveTab] = useState("profile");
   const [isEditing, setIsEditing] = useState(isEditingProp || false);
-  const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
     gradeLevel: '',
     class: '',
+    scienceMarks: '',
     status: 'Active',
     photo: '',
     parentContact: {
@@ -37,8 +39,9 @@ React.useEffect(() => {
           lastName: student.lastName || '',
           email: student.email || '',
           phone: student.phone || '',
-          gradeLevel: student.gradeLevel || '',
+gradeLevel: student.gradeLevel || '',
           class: student.class || '',
+          scienceMarks: student.scienceMarks || '',
           status: student.status || 'Active',
           photo: student.photo || '',
           parentContact: {
@@ -57,6 +60,7 @@ React.useEffect(() => {
           class: '',
           status: 'Active',
           photo: '',
+scienceMarks: '',
           parentContact: {
             name: '',
             phone: '',
@@ -350,30 +354,45 @@ const [parent, child] = field.split('.');
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Class
+Class
                       </label>
-                      <input
-                        type="text"
+                      <Input
                         value={formData.class}
                         onChange={(e) => handleInputChange('class', e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                        placeholder="10-A"
+                        className="w-full"
                       />
                     </div>
+
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Status
+                        Science Marks
                       </label>
-                      <select
-                        value={formData.status}
-                        onChange={(e) => handleInputChange('status', e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                      >
-                        <option value="Active">Active</option>
-                        <option value="Inactive">Inactive</option>
-                        <option value="At Risk">At Risk</option>
-                      </select>
+                      <Input
+                        type="number"
+                        min="0"
+                        max="100"
+                        value={formData.scienceMarks}
+                        onChange={(e) => handleInputChange('scienceMarks', e.target.value)}
+                        className="w-full"
+                        placeholder="Enter science marks (0-100)"
+                      />
                     </div>
+</div>
+
+                  {/* Status */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Status
+                    </label>
+                    <select
+                      value={formData.status}
+                      onChange={(e) => handleInputChange('status', e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    >
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                      <option value="At Risk">At Risk</option>
+                    </select>
                   </div>
 
                   <div>

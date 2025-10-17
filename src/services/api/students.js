@@ -15,28 +15,33 @@ export const getStudentById = async (id) => {
 };
 
 export const createStudent = async (studentData) => {
-  await delay(400);
+  await delay(500);
   const maxId = students.length > 0 ? Math.max(...students.map(s => s.Id)) : 0;
   const newStudent = {
     ...studentData,
-    Id: maxId + 1
+    Id: maxId + 1,
+    scienceMarks: studentData.scienceMarks || ''
   };
   students.push(newStudent);
   return { ...newStudent };
 };
 
 export const updateStudent = async (id, studentData) => {
-  await delay(350);
+  await delay(450);
   const index = students.findIndex(student => student.Id === parseInt(id));
   if (index !== -1) {
-    students[index] = { ...students[index], ...studentData };
+    students[index] = { 
+      ...students[index], 
+      ...studentData,
+      scienceMarks: studentData.scienceMarks !== undefined ? studentData.scienceMarks : students[index].scienceMarks
+    };
     return { ...students[index] };
   }
   throw new Error("Student not found");
 };
 
 export const deleteStudent = async (id) => {
-  await delay(250);
+  await delay(400);
   const index = students.findIndex(student => student.Id === parseInt(id));
   if (index !== -1) {
     const deletedStudent = students.splice(index, 1)[0];

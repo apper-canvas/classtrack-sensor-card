@@ -5,9 +5,10 @@
     "lastName": "Johnson",
     "email": "emma.johnson@school.edu",
     "phone": "(555) 123-4567",
-    "gradeLevel": 10,
-    "class": "Mathematics",
-    "enrollmentDate": "2023-08-15",
+    "gradeLevel": "10",
+    "class": "10A",
+    "scienceMarks": "85",
+    "status": "Active",
     "status": "Active",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
     "parentContact": {
@@ -17,144 +18,153 @@
     }
   },
   {
-    "Id": 2,
-    "firstName": "Michael",
-    "lastName": "Chen",
-    "email": "michael.chen@school.edu",
+"Id": 2,
+    "firstName": "Liam",
+    "lastName": "Smith",
+    "email": "liam.smith@school.edu",
     "phone": "(555) 234-5678",
-    "gradeLevel": 11,
-    "class": "Science",
-    "enrollmentDate": "2023-08-15",
+    "gradeLevel": "11",
+    "class": "11B",
+    "scienceMarks": "92",
     "status": "Active",
-    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+    "photo": "https://i.pravatar.cc/150?img=12",
+    "parentContact": {
     "parentContact": {
       "name": "David Chen",
       "phone": "(555) 234-5679",
       "email": "david.chen@email.com"
     }
   },
-  {
-    "Id": 3,
-    "firstName": "Sarah",
+"Id": 3,
+    "firstName": "Olivia",
     "lastName": "Williams",
-    "email": "sarah.williams@school.edu",
+    "email": "olivia.williams@school.edu",
     "phone": "(555) 345-6789",
-    "gradeLevel": 9,
-    "class": "English",
-    "enrollmentDate": "2023-08-15",
-    "status": "At Risk",
+    "gradeLevel": "9",
+    "class": "9C",
+    "scienceMarks": "78",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=5",
+    "parentContact": {
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
     "parentContact": {
       "name": "Lisa Williams",
       "phone": "(555) 345-6790",
       "email": "lisa.williams@email.com"
-    }
-  },
-  {
-    "Id": 4,
-    "firstName": "James",
-    "lastName": "Rodriguez",
-    "email": "james.rodriguez@school.edu",
+    },
+"Id": 4,
+    "firstName": "Noah",
+    "lastName": "Brown",
+    "email": "noah.brown@school.edu",
     "phone": "(555) 456-7890",
-    "gradeLevel": 12,
-    "class": "History",
-    "enrollmentDate": "2023-08-15",
+    "gradeLevel": "12",
+    "class": "12A",
+    "scienceMarks": "95",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=13",
+    "parentContact": {
     "status": "Active",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
     "parentContact": {
       "name": "Maria Rodriguez",
       "phone": "(555) 456-7891",
-      "email": "maria.rodriguez@email.com"
-    }
-  },
-  {
-    "Id": 5,
-    "firstName": "Ashley",
+      "email": "maria.rodriguez@email.com",
+"Id": 5,
+    "firstName": "Ava",
     "lastName": "Davis",
-    "email": "ashley.davis@school.edu",
+    "email": "ava.davis@school.edu",
     "phone": "(555) 567-8901",
-    "gradeLevel": 10,
-    "class": "Art",
+    "gradeLevel": "10",
+    "class": "10B",
+    "scienceMarks": "88",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=9",
+    "parentContact": {
     "enrollmentDate": "2023-08-15",
     "status": "Active",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ashley",
     "parentContact": {
       "name": "Jennifer Davis",
       "phone": "(555) 567-8902",
-      "email": "jennifer.davis@email.com"
-    }
-  },
-  {
-    "Id": 6,
-    "firstName": "Daniel",
-    "lastName": "Thompson",
-    "email": "daniel.thompson@school.edu",
+"Id": 6,
+    "firstName": "Ethan",
+    "lastName": "Miller",
+    "email": "ethan.miller@school.edu",
     "phone": "(555) 678-9012",
-    "gradeLevel": 11,
+    "gradeLevel": "11",
+    "class": "11A",
+    "scienceMarks": "65",
+    "status": "Inactive",
+    "photo": "https://i.pravatar.cc/150?img=15",
+    "parentContact": {
     "class": "Mathematics",
     "enrollmentDate": "2023-08-15",
     "status": "At Risk",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Daniel",
     "parentContact": {
       "name": "Robert Thompson",
-      "phone": "(555) 678-9013",
-      "email": "robert.thompson@email.com"
-    }
-  },
-  {
-    "Id": 7,
-    "firstName": "Olivia",
-    "lastName": "Martinez",
-    "email": "olivia.martinez@school.edu",
+"Id": 7,
+    "firstName": "Sophia",
+    "lastName": "Wilson",
+    "email": "sophia.wilson@school.edu",
     "phone": "(555) 789-0123",
+    "gradeLevel": "9",
+    "class": "9A",
+    "scienceMarks": "90",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=10",
+    "parentContact": {
     "gradeLevel": 9,
     "class": "Science",
     "enrollmentDate": "2023-08-15",
     "status": "Active",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia",
     "parentContact": {
-      "name": "Carmen Martinez",
-      "phone": "(555) 789-0124",
-      "email": "carmen.martinez@email.com"
-    }
-  },
-  {
-    "Id": 8,
-    "firstName": "Ryan",
-    "lastName": "Anderson",
-    "email": "ryan.anderson@school.edu",
+"Id": 8,
+    "firstName": "Mason",
+    "lastName": "Moore",
+    "email": "mason.moore@school.edu",
+    "phone": "(555) 890-1234",
+    "gradeLevel": "12",
+    "class": "12B",
+    "scienceMarks": "82",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=14",
+    "parentContact": {
     "phone": "(555) 890-1234",
     "gradeLevel": 12,
     "class": "English",
     "enrollmentDate": "2023-08-15",
     "status": "Active",
     "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan",
-    "parentContact": {
-      "name": "Michelle Anderson",
-      "phone": "(555) 890-1235",
-      "email": "michelle.anderson@email.com"
-    }
-  },
-  {
-    "Id": 9,
-    "firstName": "Sophia",
+"Id": 9,
+    "firstName": "Isabella",
     "lastName": "Taylor",
+    "email": "isabella.taylor@school.edu",
+    "phone": "(555) 901-2345",
+    "gradeLevel": "10",
+    "class": "10C",
+    "scienceMarks": "76",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=23",
+    "parentContact": {
     "email": "sophia.taylor@school.edu",
     "phone": "(555) 901-2345",
     "gradeLevel": 10,
     "class": "History",
     "enrollmentDate": "2023-08-15",
     "status": "Active",
-    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophia",
+"Id": 10,
+    "firstName": "James",
+    "lastName": "Anderson",
+    "email": "james.anderson@school.edu",
+    "phone": "(555) 012-3456",
+    "gradeLevel": "11",
+    "class": "11C",
+    "scienceMarks": "94",
+    "status": "Active",
+    "photo": "https://i.pravatar.cc/150?img=11",
     "parentContact": {
-      "name": "Patricia Taylor",
-      "phone": "(555) 901-2346",
-      "email": "patricia.taylor@email.com"
-    }
-  },
-  {
-    "Id": 10,
-    "firstName": "Ethan",
     "lastName": "Brown",
     "email": "ethan.brown@school.edu",
     "phone": "(555) 012-3456",
@@ -168,5 +178,5 @@
       "phone": "(555) 012-3457",
       "email": "kevin.brown@email.com"
     }
-  }
+  }}}}}}}}}}}}}
 ]
